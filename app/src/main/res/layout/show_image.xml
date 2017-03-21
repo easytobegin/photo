@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:src="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_titleBar"
+            style="@style/titleBar"
+            android:text="识别"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/iv_back"
+            android:textColor="@android:color/white"
+            android:text="返回"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/iv_showImage"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        />
+
+    <demo.minisheep.com.photo.view.CircleProgressView
+        android:id="@+id/circleprogressview"
+        android:visibility="gone"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_centerInParent="true"/>
+
+
+    <ImageView
+        android:id="@+id/iv_text"
+        android:src="@drawable/rego"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@id/iv_showImage"
+        android:padding="2dp" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="识别"
+        android:layout_alignBottom="@id/iv_text"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:visibility="gone"
+        android:layout_above="@id/iv_text"
+        android:textSize="20sp"
+        android:text="识别中，请耐心等候..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

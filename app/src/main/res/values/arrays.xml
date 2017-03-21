@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>中文识别</item>
+        <item>英文识别</item>
+    </string-array>
+</resources>

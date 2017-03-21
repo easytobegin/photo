@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">photo</string>
+    <string name="take_photo">拍照识别</string>
+    <string name="from_album">图库导入</string>
+    <string name="setting">设置</string>
+    <string name="about_software">关于软件</string>
+</resources>
